@@ -1,0 +1,15 @@
+﻿<Window x:Class="Emelina_KS.Absent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Emelina_KS"
+        mc:Ignorable="d"
+        Title="Absent" Height="478.236" Width="343.915" KeyDown="Window_KeyDown">
+    <Grid>
+        <ListView x:Name="LW" HorizontalAlignment="Left" Height="340" Margin="30,47,0,0" VerticalAlignment="Top" Width="276" SelectionChanged="LW_SelectionChanged"/>
+        <Button Content="Сохранить" x:Name="clo" HorizontalAlignment="Left" Margin="226,401,0,0" VerticalAlignment="Top" Width="80" Click="clo_Click" Height="30"/>
+        <Label x:Name="lh" Content="Присутствие группы " HorizontalAlignment="Left" Margin="30,10,0,0" VerticalAlignment="Top"/>
+        <Button FontSize="10" Content="Перезаписать список&#xD;&#xA;          из файла" HorizontalAlignment="Left" Margin="30,401,0,0" VerticalAlignment="Top" Width="125" Height="30" Click="Button_Click"/>
+    </Grid>
+</Window>

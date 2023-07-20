@@ -1,0 +1,63 @@
+﻿<Window x:Name="myw" x:Class="WPF_15Lab.NewCharacter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_15Lab"
+        mc:Ignorable="d"
+        Title="NewCharacter" Height="550" Width="800">
+    <Grid x:Name="g">
+        <Label x:Name="head" Content="Добро пожаловать в академгородок! Кто же ты, незнакомец?" HorizontalAlignment="Left" Margin="63,10,0,0" VerticalAlignment="Top" FontFamily="Arial Narrow" FontSize="28"/>
+        <Label Content="Рыцари" HorizontalAlignment="Left" Margin="37,152,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="Arial Narrow" FontSize="20">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="Драконы" HorizontalAlignment="Left" Margin="31,380,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontFamily="Arial Narrow" FontSize="20">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Image x:Name="kn0ph" Margin="158,84,492.6,308.8" Source="0.png" Stretch="Fill"/>
+        <Image x:Name="kn1ph" Margin="350,84,277.6,308.8" Source="1.png" Stretch="Fill"/>
+        <Image x:Name="kn2ph" Margin="554,84,64.6,308.8" Source="2.png" Stretch="Fill"/>
+        <Image x:Name="dr0ph" Margin="134,301,492.6,91.8" Source="3.png" Stretch="Fill"/>
+        <Image x:Name="dr1ph" Margin="329,301,263.6,91.8" Source="4.png" Stretch="Fill"/>
+        <Image x:Name="dr2ph" Margin="530,301,44.6,91.8" Source="5.png" Stretch="Fill"/>
+        <Button x:Name="Init0" Content="Обычный&#xD;&#xA;  рыцарь" HorizontalAlignment="Left" Margin="158,216,0,0" VerticalAlignment="Top" Width="143" Height="36" Click="InitNumber"/>
+        <Button x:Name="Init1" Content="Крестоносец" HorizontalAlignment="Left" Margin="373,216,0,0" VerticalAlignment="Top" Width="143" Height="36" Click="InitNumber"/>
+        <Button x:Name="Init2" Content="      Рыцарь&#xD;&#xA;круглого стола" HorizontalAlignment="Left" Margin="571,216,0,0" VerticalAlignment="Top" Width="143" Height="36" Click="InitNumber"/>
+        <Button x:Name="Init3" Content="Обычный&#xA;  дракон" HorizontalAlignment="Left" Margin="158,434,0,0" VerticalAlignment="Top" Width="143" Height="36" Click="InitNumber"/>
+        <Button x:Name="Init4" Content="Воздушный&#xA;    дракон" HorizontalAlignment="Left" Margin="373,434,0,0" VerticalAlignment="Top" Width="143" Height="36" Click="InitNumber"/>
+        <Button x:Name="Init5" Content="Морской&#xA;  дракон" HorizontalAlignment="Left" Margin="571,434,0,0" VerticalAlignment="Top" Width="143" Height="36" Click="InitNumber"/>
+        <Grid x:Name="InitCharactert" HorizontalAlignment="Left" Height="413" Margin="900,57,-462.4,0" VerticalAlignment="Top" Width="356">
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="194,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+            <Label x:Name="head_Copy" Content="Рыцарь круглого стола" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" FontSize="20" Width="305"/>
+            <Label Content="Текущее кол-во ХП" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" Width="144"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="194,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" Width="144"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="194,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="10,188,0,0" VerticalAlignment="Top" Width="144"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="194,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Width="144"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="194,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="10,262,0,0" VerticalAlignment="Top" Width="144"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="194,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="10,299,0,0" VerticalAlignment="Top" Width="144"/>
+            <TextBox HorizontalAlignment="Left" Height="26" Margin="194,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135"/>
+            <Label Content="" HorizontalAlignment="Left" Margin="10,336,0,0" VerticalAlignment="Top" Width="144"/>
+            <CheckBox  HorizontalAlignment="Left" Margin="194,83,0,0" VerticalAlignment="Top" Height="26" Width="30"/>
+        </Grid>
+
+    </Grid>
+</Window>

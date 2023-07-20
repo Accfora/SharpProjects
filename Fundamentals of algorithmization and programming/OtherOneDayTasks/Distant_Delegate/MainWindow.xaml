@@ -1,0 +1,26 @@
+﻿<Window x:Class="Distant_Delegate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Distant_Delegate"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="596">
+    <Grid>
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Height="42" Margin="25,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" Background="#FFF46262"/>
+        <TextBox x:Name="tb2" HorizontalAlignment="Left" Height="42" Margin="249,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="20" Background="#FF6979F1"/>
+        <ComboBox x:Name="operation" HorizontalAlignment="Left" Margin="162,99,0,0" VerticalAlignment="Top" Width="52" Height="42" FontSize="20" SelectedIndex="0">
+            <Button Content="+"/>
+            <Button Content="-"/>
+            <Button Content="*"/>
+            <Button Content="/"/>
+            <Button Content="**"/>
+        </ComboBox>
+        <Label x:Name="result" Content="" HorizontalAlignment="Left" Height="201" Margin="25,194,0,0" VerticalAlignment="Top" Width="539" BorderThickness="1" BorderBrush="White" Background="#FFE7E7E7" FontSize="20"/>
+        <Button x:Name="equals" Content="Вычислить!" HorizontalAlignment="Left" Height="42" Margin="427,99,0,0" VerticalAlignment="Top" Width="123" FontSize="20" Click="equals_Click"/>
+        <Label Content="Первый операнд:" HorizontalAlignment="Left" Margin="20,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="Второй операнд:" HorizontalAlignment="Left" Margin="247,66,0,0" VerticalAlignment="Top"/>
+        <Label Content="Калькулятор с использованием ComboBox и delegate" Margin="41,10,39.6,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Stretch"/>
+
+    </Grid>
+</Window>

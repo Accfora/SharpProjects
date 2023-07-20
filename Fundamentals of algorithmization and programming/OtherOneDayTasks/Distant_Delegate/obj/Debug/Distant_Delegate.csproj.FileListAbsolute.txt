@@ -1,0 +1,15 @@
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\bin\Debug\Distant_Delegate.exe.config
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\bin\Debug\Distant_Delegate.exe
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\bin\Debug\Distant_Delegate.pdb
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\Distant_Delegate.csproj.AssemblyReference.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\MainWindow.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\App.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\Distant_Delegate_MarkupCompile.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\Distant_Delegate_MarkupCompile.lref
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\MainWindow.baml
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\Distant_Delegate.g.resources
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\Distant_Delegate.Properties.Resources.resources
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\Distant_Delegate.csproj.GenerateResource.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\Distant_Delegate.csproj.CoreCompileInputs.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\Distant_Delegate.exe
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Distant_Delegate\obj\Debug\Distant_Delegate.pdb

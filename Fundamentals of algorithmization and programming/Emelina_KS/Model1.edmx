@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище Emelina_KSModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Группы">
+          <Key>
+            <PropertyRef Name="Номер_группы" />
+          </Key>
+          <Property Name="Номер_группы" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Пароль" Type="varchar" MaxLength="16" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Дежурство">
+          <Key>
+            <PropertyRef Name="Код_преподавателя" />
+            <PropertyRef Name="Дата" />
+            <PropertyRef Name="Группа" />
+          </Key>
+          <Property Name="Код_преподавателя" Type="int" Nullable="false" />
+          <Property Name="Дата" Type="date" Nullable="false" />
+          <Property Name="Группа" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Код_дежурного1" Type="int" Nullable="false" />
+          <Property Name="Код_дежурного2" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Отсутствующие">
+          <Key>
+            <PropertyRef Name="Дата" />
+            <PropertyRef Name="Код_студента" />
+          </Key>
+          <Property Name="Дата" Type="date" Nullable="false" />
+          <Property Name="Код_студента" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Пары">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Код_преподавателя" Type="int" Nullable="false" />
+          <Property Name="День_недели" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Номер_пары" Type="int" Nullable="false" />
+          <Property Name="Группа" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Подгруппы">
+          <Key>
+            <PropertyRef Name="Код_преподавателя" />
+          </Key>
+          <Property Name="Код_преподавателя" Type="int" Nullable="false" />
+          <Property Name="Первая_подгруппа" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Преподаватели">
+          <Key>
+            <PropertyRef Name="Код_преподавателя" />
+          </Key>
+          <Property Name="Код_преподавателя" Type="int" Nullable="false" />
+          <Property Name="Фамилия_преподавателя" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Имя_преподавателя" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Отчество_преподавателя" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Студенты">
+          <Key>
+            <PropertyRef Name="Код_студента" />
+          </Key>
+          <Property Name="Код_студента" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Фамилия_студента" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Имя_студента" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Отчество_студента" Type="varchar" MaxLength="20" />
+          <Property Name="Группа" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Первая_подгруппа" Type="bit" Nullable="false" />
+          <Property Name="Отдежурено_циклов" Type="int" />
+        </EntityType>
+        <Association Name="FK__Дежурство__Код_п__2D27B809">
+          <End Role="Преподаватели" Type="Self.Преподаватели" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Дежурство" Type="Self.Дежурство" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Преподаватели">
+              <PropertyRef Name="Код_преподавателя" />
+            </Principal>
+            <Dependent Role="Дежурство">
+              <PropertyRef Name="Код_преподавателя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Пары__Код_препод__286302EC">
+          <End Role="Преподаватели" Type="Self.Преподаватели" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Пары" Type="Self.Пары" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Преподаватели">
+              <PropertyRef Name="Код_преподавателя" />
+            </Principal>
+            <Dependent Role="Пары">
+              <PropertyRef Name="Код_преподавателя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Дежурство_Студенты">
+          <End Role="Студенты" Type="Self.Студенты" Multiplicity="1" />
+          <End Role="Дежурство" Type="Self.Дежурство" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Студенты">
+              <PropertyRef Name="Код_студента" />
+            </Principal>
+            <Dependent Role="Дежурство">
+              <PropertyRef Name="Код_дежурного1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Дежурство_Студенты1">
+          <End Role="Студенты" Type="Self.Студенты" Multiplicity="1" />
+          <End Role="Дежурство" Type="Self.Дежурство" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Студенты">
+              <PropertyRef Name="Код_студента" />
+            </Principal>
+            <Dependent Role="Дежурство">
+              <PropertyRef Name="Код_дежурного2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Отсутствующие_Студенты">
+          <End Role="Студенты" Type="Self.Студенты" Multiplicity="1" />
+          <End Role="Отсутствующие" Type="Self.Отсутствующие" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Студенты">
+              <PropertyRef Name="Код_студента" />
+            </Principal>
+            <Dependent Role="Отсутствующие">
+              <PropertyRef Name="Код_студента" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Пары_Группы">
+          <End Role="Группы" Type="Self.Группы" Multiplicity="1" />
+          <End Role="Пары" Type="Self.Пары" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Группы">
+              <PropertyRef Name="Номер_группы" />
+            </Principal>
+            <Dependent Role="Пары">
+              <PropertyRef Name="Группа" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Подгруппы_Преподаватели">
+          <End Role="Преподаватели" Type="Self.Преподаватели" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Подгруппы" Type="Self.Подгруппы" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Преподаватели">
+              <PropertyRef Name="Код_преподавателя" />
+            </Principal>
+            <Dependent Role="Подгруппы">
+              <PropertyRef Name="Код_преподавателя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Студенты_Группы">
+          <End Role="Группы" Type="Self.Группы" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Студенты" Type="Self.Студенты" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Группы">
+              <PropertyRef Name="Номер_группы" />
+            </Principal>
+            <Dependent Role="Студенты">
+              <PropertyRef Name="Группа" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище Emelina_KSModelContainer">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Группы" EntityType="Self.Группы" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Дежурство" EntityType="Self.Дежурство" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Отсутствующие" EntityType="Self.Отсутствующие" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Пары" EntityType="Self.Пары" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Подгруппы" EntityType="Self.Подгруппы" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Преподаватели" EntityType="Self.Преподаватели" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Студенты" EntityType="Self.Студенты" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Дежурство__Код_п__2D27B809" Association="Self.FK__Дежурство__Код_п__2D27B809">
+            <End Role="Преподаватели" EntitySet="Преподаватели" />
+            <End Role="Дежурство" EntitySet="Дежурство" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Пары__Код_препод__286302EC" Association="Self.FK__Пары__Код_препод__286302EC">
+            <End Role="Преподаватели" EntitySet="Преподаватели" />
+            <End Role="Пары" EntitySet="Пары" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Дежурство_Студенты" Association="Self.FK_Дежурство_Студенты">
+            <End Role="Студенты" EntitySet="Студенты" />
+            <End Role="Дежурство" EntitySet="Дежурство" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Дежурство_Студенты1" Association="Self.FK_Дежурство_Студенты1">
+            <End Role="Студенты" EntitySet="Студенты" />
+            <End Role="Дежурство" EntitySet="Дежурство" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Отсутствующие_Студенты" Association="Self.FK_Отсутствующие_Студенты">
+            <End Role="Студенты" EntitySet="Студенты" />
+            <End Role="Отсутствующие" EntitySet="Отсутствующие" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Пары_Группы" Association="Self.FK_Пары_Группы">
+            <End Role="Группы" EntitySet="Группы" />
+            <End Role="Пары" EntitySet="Пары" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Подгруппы_Преподаватели" Association="Self.FK_Подгруппы_Преподаватели">
+            <End Role="Преподаватели" EntitySet="Преподаватели" />
+            <End Role="Подгруппы" EntitySet="Подгруппы" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Студенты_Группы" Association="Self.FK_Студенты_Группы">
+            <End Role="Группы" EntitySet="Группы" />
+            <End Role="Студенты" EntitySet="Студенты" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Emelina_KSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Группы">
+          <Key>
+            <PropertyRef Name="Номер_группы" />
+          </Key>
+          <Property Name="Номер_группы" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Пароль" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Пары" Relationship="Self.FK_Пары_Группы" FromRole="Группы" ToRole="Пары" />
+          <NavigationProperty Name="Студенты" Relationship="Self.FK_Студенты_Группы" FromRole="Группы" ToRole="Студенты" />
+        </EntityType>
+        <EntityType Name="Дежурство">
+          <Key>
+            <PropertyRef Name="Код_преподавателя" />
+            <PropertyRef Name="Дата" />
+            <PropertyRef Name="Группа" />
+          </Key>
+          <Property Name="Код_преподавателя" Type="Int32" Nullable="false" />
+          <Property Name="Дата" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Группа" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Код_дежурного1" Type="Int32" Nullable="false" />
+          <Property Name="Код_дежурного2" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Преподаватели" Relationship="Self.FK__Дежурство__Код_п__2D27B809" FromRole="Дежурство" ToRole="Преподаватели" />
+          <NavigationProperty Name="Студенты" Relationship="Self.FK_Дежурство_Студенты" FromRole="Дежурство" ToRole="Студенты" />
+          <NavigationProperty Name="Студенты1" Relationship="Self.FK_Дежурство_Студенты1" FromRole="Дежурство" ToRole="Студенты" />
+        </EntityType>
+        <EntityType Name="Отсутствующие">
+          <Key>
+            <PropertyRef Name="Дата" />
+            <PropertyRef Name="Код_студента" />
+          </Key>
+          <Property Name="Дата" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Код_студента" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Студенты" Relationship="Self.FK_Отсутствующие_Студенты" FromRole="Отсутствующие" ToRole="Студенты" />
+        </EntityType>
+        <EntityType Name="Пары">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Код_преподавателя" Type="Int32" Nullable="false" />
+          <Property Name="День_недели" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Номер_пары" Type="Int32" Nullable="false" />
+          <Property Name="Группа" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Группы" Relationship="Self.FK_Пары_Группы" FromRole="Пары" ToRole="Группы" />
+          <NavigationProperty Name="Преподаватели" Relationship="Self.FK__Пары__Код_препод__286302EC" FromRole="Пары" ToRole="Преподаватели" />
+        </EntityType>
+        <EntityType Name="Подгруппы">
+          <Key>
+            <PropertyRef Name="Код_преподавателя" />
+          </Key>
+          <Property Name="Код_преподавателя" Type="Int32" Nullable="false" />
+          <Property Name="Первая_подгруппа" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Преподаватели" Relationship="Self.FK_Подгруппы_Преподаватели" FromRole="Подгруппы" ToRole="Преподаватели" />
+        </EntityType>
+        <EntityType Name="Преподаватели">
+          <Key>
+            <PropertyRef Name="Код_преподавателя" />
+          </Key>
+          <Property Name="Код_преподавателя" Type="Int32" Nullable="false" />
+          <Property Name="Фамилия_преподавателя" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Имя_преподавателя" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Отчество_преподавателя" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Дежурство" Relationship="Self.FK__Дежурство__Код_п__2D27B809" FromRole="Преподаватели" ToRole="Дежурство" />
+          <NavigationProperty Name="Пары" Relationship="Self.FK__Пары__Код_препод__286302EC" FromRole="Преподаватели" ToRole="Пары" />
+          <NavigationProperty Name="Подгруппы" Relationship="Self.FK_Подгруппы_Преподаватели" FromRole="Преподаватели" ToRole="Подгруппы" />
+        </EntityType>
+        <EntityType Name="Студенты">
+          <Key>
+            <PropertyRef Name="Код_студента" />
+          </Key>
+          <Property Name="Код_студента" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Фамилия_студента" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Имя_студента" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Отчество_студента" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Группа" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Первая_подгруппа" Type="Boolean" Nullable="false" />
+          <Property Name="Отдежурено_циклов" Type="Int32" />
+          <NavigationProperty Name="Группы" Relationship="Self.FK_Студенты_Группы" FromRole="Студенты" ToRole="Группы" />
+          <NavigationProperty Name="Дежурство" Relationship="Self.FK_Дежурство_Студенты" FromRole="Студенты" ToRole="Дежурство" />
+          <NavigationProperty Name="Дежурство1" Relationship="Self.FK_Дежурство_Студенты1" FromRole="Студенты" ToRole="Дежурство" />
+          <NavigationProperty Name="Отсутствующие" Relationship="Self.FK_Отсутствующие_Студенты" FromRole="Студенты" ToRole="Отсутствующие" />
+        </EntityType>
+        <Association Name="FK_Пары_Группы">
+          <End Role="Группы" Type="Self.Группы" Multiplicity="1" />
+          <End Role="Пары" Type="Self.Пары" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Группы">
+              <PropertyRef Name="Номер_группы" />
+            </Principal>
+            <Dependent Role="Пары">
+              <PropertyRef Name="Группа" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Студенты_Группы">
+          <End Role="Группы" Type="Self.Группы" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Студенты" Type="Self.Студенты" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Группы">
+              <PropertyRef Name="Номер_группы" />
+            </Principal>
+            <Dependent Role="Студенты">
+              <PropertyRef Name="Группа" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Дежурство__Код_п__2D27B809">
+          <End Role="Преподаватели" Type="Self.Преподаватели" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Дежурство" Type="Self.Дежурство" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Преподаватели">
+              <PropertyRef Name="Код_преподавателя" />
+            </Principal>
+            <Dependent Role="Дежурство">
+              <PropertyRef Name="Код_преподавателя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Дежурство_Студенты">
+          <End Role="Студенты" Type="Self.Студенты" Multiplicity="1" />
+          <End Role="Дежурство" Type="Self.Дежурство" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Студенты">
+              <PropertyRef Name="Код_студента" />
+            </Principal>
+            <Dependent Role="Дежурство">
+              <PropertyRef Name="Код_дежурного1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Дежурство_Студенты1">
+          <End Role="Студенты" Type="Self.Студенты" Multiplicity="1" />
+          <End Role="Дежурство" Type="Self.Дежурство" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Студенты">
+              <PropertyRef Name="Код_студента" />
+            </Principal>
+            <Dependent Role="Дежурство">
+              <PropertyRef Name="Код_дежурного2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Отсутствующие_Студенты">
+          <End Role="Студенты" Type="Self.Студенты" Multiplicity="1" />
+          <End Role="Отсутствующие" Type="Self.Отсутствующие" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Студенты">
+              <PropertyRef Name="Код_студента" />
+            </Principal>
+            <Dependent Role="Отсутствующие">
+              <PropertyRef Name="Код_студента" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Пары__Код_препод__286302EC">
+          <End Role="Преподаватели" Type="Self.Преподаватели" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Пары" Type="Self.Пары" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Преподаватели">
+              <PropertyRef Name="Код_преподавателя" />
+            </Principal>
+            <Dependent Role="Пары">
+              <PropertyRef Name="Код_преподавателя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Подгруппы_Преподаватели">
+          <End Role="Преподаватели" Type="Self.Преподаватели" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Подгруппы" Type="Self.Подгруппы" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Преподаватели">
+              <PropertyRef Name="Код_преподавателя" />
+            </Principal>
+            <Dependent Role="Подгруппы">
+              <PropertyRef Name="Код_преподавателя" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Emelina_KSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Группы" EntityType="Self.Группы" />
+          <EntitySet Name="Дежурство" EntityType="Self.Дежурство" />
+          <EntitySet Name="Отсутствующие" EntityType="Self.Отсутствующие" />
+          <EntitySet Name="Пары" EntityType="Self.Пары" />
+          <EntitySet Name="Подгруппы" EntityType="Self.Подгруппы" />
+          <EntitySet Name="Преподаватели" EntityType="Self.Преподаватели" />
+          <EntitySet Name="Студенты" EntityType="Self.Студенты" />
+          <AssociationSet Name="FK_Пары_Группы" Association="Self.FK_Пары_Группы">
+            <End Role="Группы" EntitySet="Группы" />
+            <End Role="Пары" EntitySet="Пары" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Студенты_Группы" Association="Self.FK_Студенты_Группы">
+            <End Role="Группы" EntitySet="Группы" />
+            <End Role="Студенты" EntitySet="Студенты" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Дежурство__Код_п__2D27B809" Association="Self.FK__Дежурство__Код_п__2D27B809">
+            <End Role="Преподаватели" EntitySet="Преподаватели" />
+            <End Role="Дежурство" EntitySet="Дежурство" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Дежурство_Студенты" Association="Self.FK_Дежурство_Студенты">
+            <End Role="Студенты" EntitySet="Студенты" />
+            <End Role="Дежурство" EntitySet="Дежурство" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Дежурство_Студенты1" Association="Self.FK_Дежурство_Студенты1">
+            <End Role="Студенты" EntitySet="Студенты" />
+            <End Role="Дежурство" EntitySet="Дежурство" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Отсутствующие_Студенты" Association="Self.FK_Отсутствующие_Студенты">
+            <End Role="Студенты" EntitySet="Студенты" />
+            <End Role="Отсутствующие" EntitySet="Отсутствующие" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Пары__Код_препод__286302EC" Association="Self.FK__Пары__Код_препод__286302EC">
+            <End Role="Преподаватели" EntitySet="Преподаватели" />
+            <End Role="Пары" EntitySet="Пары" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Подгруппы_Преподаватели" Association="Self.FK_Подгруппы_Преподаватели">
+            <End Role="Преподаватели" EntitySet="Преподаватели" />
+            <End Role="Подгруппы" EntitySet="Подгруппы" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище Emelina_KSModelContainer" CdmEntityContainer="Emelina_KSEntities">
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="Emelina_KSModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Группы">
+            <EntityTypeMapping TypeName="Emelina_KSModel.Группы">
+              <MappingFragment StoreEntitySet="Группы">
+                <ScalarProperty Name="Номер_группы" ColumnName="Номер_группы" />
+                <ScalarProperty Name="Пароль" ColumnName="Пароль" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Дежурство">
+            <EntityTypeMapping TypeName="Emelina_KSModel.Дежурство">
+              <MappingFragment StoreEntitySet="Дежурство">
+                <ScalarProperty Name="Код_преподавателя" ColumnName="Код_преподавателя" />
+                <ScalarProperty Name="Дата" ColumnName="Дата" />
+                <ScalarProperty Name="Группа" ColumnName="Группа" />
+                <ScalarProperty Name="Код_дежурного1" ColumnName="Код_дежурного1" />
+                <ScalarProperty Name="Код_дежурного2" ColumnName="Код_дежурного2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Отсутствующие">
+            <EntityTypeMapping TypeName="Emelina_KSModel.Отсутствующие">
+              <MappingFragment StoreEntitySet="Отсутствующие">
+                <ScalarProperty Name="Дата" ColumnName="Дата" />
+                <ScalarProperty Name="Код_студента" ColumnName="Код_студента" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Пары">
+            <EntityTypeMapping TypeName="Emelina_KSModel.Пары">
+              <MappingFragment StoreEntitySet="Пары">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Код_преподавателя" ColumnName="Код_преподавателя" />
+                <ScalarProperty Name="День_недели" ColumnName="День_недели" />
+                <ScalarProperty Name="Номер_пары" ColumnName="Номер_пары" />
+                <ScalarProperty Name="Группа" ColumnName="Группа" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Подгруппы">
+            <EntityTypeMapping TypeName="Emelina_KSModel.Подгруппы">
+              <MappingFragment StoreEntitySet="Подгруппы">
+                <ScalarProperty Name="Код_преподавателя" ColumnName="Код_преподавателя" />
+                <ScalarProperty Name="Первая_подгруппа" ColumnName="Первая_подгруппа" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Преподаватели">
+            <EntityTypeMapping TypeName="Emelina_KSModel.Преподаватели">
+              <MappingFragment StoreEntitySet="Преподаватели">
+                <ScalarProperty Name="Код_преподавателя" ColumnName="Код_преподавателя" />
+                <ScalarProperty Name="Фамилия_преподавателя" ColumnName="Фамилия_преподавателя" />
+                <ScalarProperty Name="Имя_преподавателя" ColumnName="Имя_преподавателя" />
+                <ScalarProperty Name="Отчество_преподавателя" ColumnName="Отчество_преподавателя" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Студенты">
+            <EntityTypeMapping TypeName="Emelina_KSModel.Студенты">
+              <MappingFragment StoreEntitySet="Студенты">
+                <ScalarProperty Name="Код_студента" ColumnName="Код_студента" />
+                <ScalarProperty Name="Фамилия_студента" ColumnName="Фамилия_студента" />
+                <ScalarProperty Name="Имя_студента" ColumnName="Имя_студента" />
+                <ScalarProperty Name="Отчество_студента" ColumnName="Отчество_студента" />
+                <ScalarProperty Name="Группа" ColumnName="Группа" />
+                <ScalarProperty Name="Первая_подгруппа" ColumnName="Первая_подгруппа" />
+                <ScalarProperty Name="Отдежурено_циклов" ColumnName="Отдежурено_циклов" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,12 @@
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\UniversityLibrary\bin\Debug\UniversityLibrary.dll
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\UniversityLibrary\bin\Debug\UniversityLibrary.pdb
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\UniversityLibrary\obj\Debug\UniversityLibrary.csproj.AssemblyReference.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\UniversityLibrary\obj\Debug\UniversityLibrary.csproj.CoreCompileInputs.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\UniversityLibrary\obj\Debug\UniversityLibrary.dll
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\UniversityLibrary\obj\Debug\UniversityLibrary.pdb
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\UniversityLibrary\bin\Debug\UniversityLibrary.dll
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\UniversityLibrary\bin\Debug\UniversityLibrary.pdb
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\UniversityLibrary\obj\Debug\UniversityLibrary.csproj.AssemblyReference.cache
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\UniversityLibrary\obj\Debug\UniversityLibrary.csproj.CoreCompileInputs.cache
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\UniversityLibrary\obj\Debug\UniversityLibrary.dll
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\UniversityLibrary\obj\Debug\UniversityLibrary.pdb

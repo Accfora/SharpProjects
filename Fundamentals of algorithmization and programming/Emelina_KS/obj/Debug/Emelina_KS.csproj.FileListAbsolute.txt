@@ -1,0 +1,61 @@
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\bin\Debug\Emelina_KS.exe.config
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\bin\Debug\Emelina_KS.exe
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\bin\Debug\Emelina_KS.pdb
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Emelina_KS.csproj.AssemblyReference.cache
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\MainWindow.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\App.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Emelina_KS_MarkupCompile.cache
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Emelina_KS_MarkupCompile.lref
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\MainWindow.baml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Emelina_KS.g.resources
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Emelina_KS.Properties.Resources.resources
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Emelina_KS.csproj.GenerateResource.cache
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Emelina_KS.csproj.CoreCompileInputs.cache
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Emelina_KS.exe
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Emelina_KS.pdb
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Absent.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Absent.baml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\DutyWindow.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\DutyWindow.baml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\ParrEditing.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Emelina_KS_Content.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\bin\Debug\EntityFramework.dll
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\bin\Debug\EntityFramework.xml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\ParrEditing.baml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\Emelina_KS.csproj.CopyComplete
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\EditOneParr.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Emelina_KS\obj\Debug\EditOneParr.baml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\bin\Debug\Emelina_KS.exe.config
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\bin\Debug\Emelina_KS.exe
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\bin\Debug\Emelina_KS.pdb
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\bin\Debug\EntityFramework.dll
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\bin\Debug\EntityFramework.xml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Emelina_KS.csproj.AssemblyReference.cache
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Absent.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\DutyWindow.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\EditOneParr.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\MainWindow.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\ParrEditing.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\App.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Emelina_KS_Content.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Emelina_KS_MarkupCompile.cache
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Emelina_KS_MarkupCompile.lref
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Absent.baml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\DutyWindow.baml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\EditOneParr.baml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\MainWindow.baml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\ParrEditing.baml
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Emelina_KS.g.resources
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Emelina_KS.Properties.Resources.resources
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Emelina_KS.csproj.GenerateResource.cache
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Emelina_KS.csproj.CoreCompileInputs.cache
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Emelina_KS.csproj.CopyComplete
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Emelina_KS.exe
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\Emelina_KS.pdb
+C:\Users\borod\OneDrive\Рабочий стол\ThirdDust\Емелина_Внедрение\Большая лабораторная\Emelina_KS\obj\Debug\App.baml

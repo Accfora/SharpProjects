@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "DistantAuf2/1.0.0": {
+        "runtime": {
+          "DistantAuf2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DistantAuf2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

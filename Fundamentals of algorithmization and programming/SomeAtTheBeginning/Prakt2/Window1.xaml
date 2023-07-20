@@ -1,0 +1,15 @@
+﻿<Window x:Class="aaa.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:aaa"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="kdnibback" Content="Назад" HorizontalAlignment="Left" Margin="695,391,0,0" VerticalAlignment="Top" Width="75" Click="kdnibback_Click"/>
+        <Button x:Name="kdnib1" Content="Не нажимать!" HorizontalAlignment="Left" Margin="337,287,0,0" VerticalAlignment="Top" Width="86" Height="42" Background="Red" Click="kdnib1_Click"/>
+        <TextBox x:Name="kdnit1" HorizontalAlignment="Left" Height="23" Margin="305,193,0,0" TextWrapping="Wrap" Text="Добрый день!" VerticalAlignment="Top" Width="163"/>
+
+    </Grid>
+</Window>

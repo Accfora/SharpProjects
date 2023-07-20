@@ -1,0 +1,40 @@
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\bin\Debug\Prakt11Lab.exe.config
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\bin\Debug\Prakt11Lab.exe
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\bin\Debug\Prakt11Lab.pdb
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\bin\Debug\UniversityLibrary.dll
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\bin\Debug\UniversityLibrary.pdb
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\Prakt11Lab.csproj.AssemblyReference.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\MainWindow.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\App.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\Prakt11Lab_MarkupCompile.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\Prakt11Lab_MarkupCompile.lref
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\MainWindow.baml
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\Prakt11Lab.g.resources
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\Prakt11Lab.Properties.Resources.resources
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\Prakt11Lab.csproj.GenerateResource.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\Prakt11Lab.csproj.CoreCompileInputs.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\Prakt11Lab.csproj.CopyComplete
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\Prakt11Lab.exe
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\Prakt11Lab.pdb
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\ReadOpisanie.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt11Lab\obj\Debug\ReadOpisanie.baml
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\bin\Debug\Prakt11Lab.exe.config
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\bin\Debug\Prakt11Lab.exe
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\bin\Debug\Prakt11Lab.pdb
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\bin\Debug\UniversityLibrary.dll
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\bin\Debug\UniversityLibrary.pdb
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\Prakt11Lab.csproj.AssemblyReference.cache
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\MainWindow.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\ReadOpisanie.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\App.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\Prakt11Lab_MarkupCompile.cache
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\Prakt11Lab_MarkupCompile.lref
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\MainWindow.baml
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\ReadOpisanie.baml
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\Prakt11Lab.g.resources
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\Prakt11Lab.Properties.Resources.resources
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\Prakt11Lab.csproj.GenerateResource.cache
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\Prakt11Lab.csproj.CoreCompileInputs.cache
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\Prakt11Lab.csproj.CopyComplete
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\Prakt11Lab.exe
+C:\Users\borod\OneDrive\Рабочий стол\Dust_21-22\Основы алгоритмизации и программирования\Labs\Prakt11Lab\obj\Debug\Prakt11Lab.pdb

@@ -1,0 +1,15 @@
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\bin\Debug\Prakt10.exe.config
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\bin\Debug\Prakt10.exe
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\bin\Debug\Prakt10.pdb
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\Prakt10.csproj.AssemblyReference.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\MainWindow.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\App.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\Prakt10_MarkupCompile.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\Prakt10_MarkupCompile.lref
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\MainWindow.baml
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\Prakt10.g.resources
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\Prakt10.Properties.Resources.resources
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\Prakt10.csproj.GenerateResource.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\Prakt10.csproj.CoreCompileInputs.cache
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\Prakt10.exe
+C:\Users\borod\OneDrive\Рабочий стол\VisualStudio\Prakt10\obj\Debug\Prakt10.pdb

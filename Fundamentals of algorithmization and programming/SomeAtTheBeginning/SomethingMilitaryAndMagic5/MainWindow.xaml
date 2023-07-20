@@ -1,0 +1,73 @@
+﻿<Window x:Class="SomethingMilitaryAndMagic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SomethingMilitaryAndMagic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="624.567" Width="1394.852">
+    <Grid Margin="1,0,-1.4,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="661*"/>
+            <ColumnDefinition Width="133*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFF95D57" HorizontalAlignment="Left" Height="106" Margin="10,9,0,0" Stroke="Black" VerticalAlignment="Top" Width="515"/>
+        <Rectangle Fill="#FF5C868E" HorizontalAlignment="Left" Height="353" Margin="8,144,0,0" Stroke="Black" VerticalAlignment="Top" Width="307"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,166,0,0" TextWrapping="Wrap" Text="Университет" VerticalAlignment="Top" Cursor="" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="24,22,0,0" TextWrapping="Wrap" Text="Персонаж" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Н"/><Run Text="азвание навыка"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="34,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="С"/><Run Text="тоимость курса"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="34,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="125"><Run Text="Т"/><Run Text="екущая сумма "/><Run Text="денег на счету университета"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="34,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Имя"/>
+        <TextBlock HorizontalAlignment="Left" Margin="374,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Текущее значение навыка" Width="137"/>
+        <TextBlock HorizontalAlignment="Left" Margin="201,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="125"><Run Text="Т"/><Run Text="екущая сумма "/><Run Text="денег "/></TextBlock>
+        <TextBox x:Name="TbSkillName1" HorizontalAlignment="Left" Height="23" Margin="176,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Ум"/>
+        <TextBox x:Name="TbCoursePrice1" HorizontalAlignment="Left" Height="23" Margin="176,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="20"/>
+        <TextBox x:Name="TbCurrentUniversityMoney1" HorizontalAlignment="Left" Height="23" Margin="176,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0"/>
+        <TextBox x:Name="TbName2" HorizontalAlignment="Left" Height="23" Margin="34,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Абоба"/>
+        <TextBox x:Name="TbCurrentHeroMoney2" HorizontalAlignment="Left" Height="23" Margin="201,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="1000"/>
+        <TextBox x:Name="TbCurrentSkillAmount2" HorizontalAlignment="Left" Height="23" Margin="374,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="100"/>
+        <Button x:Name="ButtonSave1" Content="Сохранить" HorizontalAlignment="Left" Margin="175,502,0,0" VerticalAlignment="Top" Width="120" Height="22" IsEnabled="False" Click="ButtonSave1_Click"/>
+        <Button x:Name="ButtonSave2" Content="Сохранить" HorizontalAlignment="Left" Margin="555,77,0,0" VerticalAlignment="Top" Width="120" Height="22" Click="ButtonSave2_Click"/>
+        <TextBox x:Name="TbPowerSkill1" HorizontalAlignment="Left" Height="23" Margin="176,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0,1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Степень прокачки навыка" Width="125"/>
+        <Rectangle Fill="#FF5C8E85" HorizontalAlignment="Left" Height="353" Margin="317,144,0,0" Stroke="Black" VerticalAlignment="Top" Width="307"/>
+        <TextBlock HorizontalAlignment="Left" Margin="343,166,0,0" TextWrapping="Wrap" Text="Военная академия" VerticalAlignment="Top" Cursor="" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="343,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Н"/><Run Text="азвание навыка"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="343,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="С"/><Run Text="тоимость курса"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="343,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="125"><Run Text="Т"/><Run Text="екущая сумма "/><Run Text="денег на счету университета"/></TextBlock>
+        <TextBox x:Name="TbSkillName3" HorizontalAlignment="Left" Height="23" Margin="485,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Сила"/>
+        <TextBox x:Name="TbCoursePrice3" HorizontalAlignment="Left" Height="23" Margin="485,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="50"/>
+        <TextBox x:Name="TbCurrentUniversityMoney3" HorizontalAlignment="Left" Height="23" Margin="485,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0"/>
+        <Button x:Name="ButtonSave3" Content="Сохранить" HorizontalAlignment="Left" Margin="484,502,0,0" VerticalAlignment="Top" Width="120" Height="22" IsEnabled="False" Click="ButtonSave3_Click"/>
+        <TextBox x:Name="TbPowerSkill3" HorizontalAlignment="Left" Height="23" Margin="485,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0,3"/>
+        <TextBlock HorizontalAlignment="Left" Margin="343,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Степень прокачки навыка" Width="125"/>
+        <Rectangle Fill="#FF5C6B8E" HorizontalAlignment="Left" Height="353" Margin="626,144,0,0" Stroke="Black" VerticalAlignment="Top" Width="307"/>
+        <TextBlock HorizontalAlignment="Left" Margin="652,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Cursor="" FontWeight="Bold"><Run Text="Магическая академия"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="652,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Н"/><Run Text="азвание навыка"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="652,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="С"/><Run Text="тоимость курса"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="652,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="125"><Run Text="Т"/><Run Text="екущая сумма "/><Run Text="денег на счету университета"/></TextBlock>
+        <TextBox x:Name="TbSkillName4" HorizontalAlignment="Left" Height="23" Margin="794,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Шторм"/>
+        <TextBox x:Name="TbCoursePrice4" HorizontalAlignment="Left" Height="23" Margin="794,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="30"/>
+        <TextBox x:Name="TbCurrentUniversityMoney4" HorizontalAlignment="Left" Height="23" Margin="794,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0"/>
+        <Button x:Name="ButtonSave4" Content="Сохранить" HorizontalAlignment="Left" Margin="793,502,0,0" VerticalAlignment="Top" Width="120" Height="22" IsEnabled="False" Click="ButtonSave4_Click"/>
+        <TextBox x:Name="TbPowerSkill4" HorizontalAlignment="Left" Height="23" Margin="794,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0,5"/>
+        <TextBlock HorizontalAlignment="Left" Margin="652,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Степень прокачки навыка" Width="125"/>
+        <Rectangle Fill="#FF797979" HorizontalAlignment="Left" Height="487" Margin="935,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="445" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="652,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Вид стихии"/>
+        <TextBox x:Name="TbSkillType4" HorizontalAlignment="Left" Height="23" Margin="794,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Вода"/>
+        <TextBox x:Name="TbNagrady3" HorizontalAlignment="Left" Height="23" Margin="485,448,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="15"/>
+        <TextBox x:Name="TbLevel4" HorizontalAlignment="Left" Height="23" Margin="794,448,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="3"/>
+        <TextBlock HorizontalAlignment="Left" Margin="343,450,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="125" Text="Число наград"/>
+        <TextBlock HorizontalAlignment="Left" Margin="656,448,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Уровень академии"/>
+        <Button x:Name="ButtonLearn1" Content="Учиться" HorizontalAlignment="Left" Margin="175,531,0,0" VerticalAlignment="Top" Width="120" Height="22" IsEnabled="False" Click="ButtonLearn1_Click"/>
+        <Button x:Name="ButtonLearn3" Content="Учиться" HorizontalAlignment="Left" Margin="484,531,0,0" VerticalAlignment="Top" Width="120" Height="22" IsEnabled="False" Click="ButtonLearn3_Click"/>
+        <Button x:Name="ButtonLearn4" Content="Учиться" HorizontalAlignment="Left" Margin="793,531,0,0" VerticalAlignment="Top" Width="120" Height="22" IsEnabled="False" Click="ButtonLearn4_Click"/>
+        <Button x:Name="ButtonList" Content="Выдать" HorizontalAlignment="Left" Margin="1147,502,0,0" VerticalAlignment="Top" Width="120" Height="22" Grid.ColumnSpan="2" Click="ButtonList_Click"/>
+        <Label x:Name="Edu" Content="" HorizontalAlignment="Left" Margin="948,49,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="448" Width="432" FontSize="10"/>
+        <TextBlock HorizontalAlignment="Left" Margin="966,22,0,0" TextWrapping="Wrap" Text="Список получения образования" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" Width="301"/>
+        <Button x:Name="ButtonClear" Content="Очистить" HorizontalAlignment="Left" Margin="1147,531,0,0" VerticalAlignment="Top" Width="120" Height="22" Grid.ColumnSpan="2" Click="ButtonClear_Click"/>
+        <Button x:Name="nanan" Content="Выдать награду" HorizontalAlignment="Left" Margin="486,563,0,0" VerticalAlignment="Top" Width="119" Height="22" Click="nanan_Click" IsEnabled="False"/>
+
+    </Grid>
+</Window>

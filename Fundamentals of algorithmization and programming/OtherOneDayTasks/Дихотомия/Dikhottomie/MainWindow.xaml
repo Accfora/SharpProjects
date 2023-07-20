@@ -1,0 +1,22 @@
+﻿<Window x:Class="Dikhottomie.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dikhottomie"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="TB_els" HorizontalAlignment="Left" Height="23" Margin="278,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Text="" TextChanged="Edited"/>
+        <TextBox x:Name="TB_left" HorizontalAlignment="Left" Height="23" Margin="278,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="63" TextChanged="Edited"/>
+        <TextBox x:Name="TB_right" HorizontalAlignment="Left" Height="23" Margin="372,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="63" TextChanged="Edited"/>
+        <TextBox x:Name="TB_tochnost" HorizontalAlignment="Left" Height="23" Margin="278,208,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="63" TextChanged="Edited"/>
+        <Button x:Name="B" Content="Высчитать" HorizontalAlignment="Left" Margin="77,277,0,0" VerticalAlignment="Top" Width="120" Height="33" IsEnabled="False" Click="B_Click"/>
+        <Label x:Name="result" Content="" HorizontalAlignment="Left" Margin="278,308,0,0" VerticalAlignment="Top"/>
+        <Label Content="Результат: " HorizontalAlignment="Left" Margin="272,277,0,0" VerticalAlignment="Top"/>
+        <Label Content="Коэффициенты многочлена" HorizontalAlignment="Left" Margin="77,98,0,0" VerticalAlignment="Top"/>
+        <Label Content="Границы интервала" HorizontalAlignment="Left" Margin="77,150,0,0" VerticalAlignment="Top"/>
+        <Label Content="Точность" HorizontalAlignment="Left" Margin="77,208,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

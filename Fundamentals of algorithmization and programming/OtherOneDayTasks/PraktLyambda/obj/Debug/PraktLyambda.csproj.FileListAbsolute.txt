@@ -1,0 +1,30 @@
+C:\Users\user.UIT\source\repos\PraktLyambda\bin\Debug\PraktLyambda.exe.config
+C:\Users\user.UIT\source\repos\PraktLyambda\bin\Debug\PraktLyambda.exe
+C:\Users\user.UIT\source\repos\PraktLyambda\bin\Debug\PraktLyambda.pdb
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\PraktLyambda.csprojAssemblyReference.cache
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\MainWindow.g.cs
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\App.g.cs
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\PraktLyambda_MarkupCompile.cache
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\PraktLyambda_MarkupCompile.lref
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\MainWindow.baml
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\PraktLyambda.g.resources
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\PraktLyambda.Properties.Resources.resources
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\PraktLyambda.csproj.GenerateResource.cache
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\PraktLyambda.csproj.CoreCompileInputs.cache
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\PraktLyambda.exe
+C:\Users\user.UIT\source\repos\PraktLyambda\obj\Debug\PraktLyambda.pdb
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\bin\Debug\PraktLyambda.exe.config
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\bin\Debug\PraktLyambda.exe
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\bin\Debug\PraktLyambda.pdb
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\PraktLyambda.csproj.AssemblyReference.cache
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\MainWindow.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\App.g.cs
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\PraktLyambda_MarkupCompile.cache
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\PraktLyambda_MarkupCompile.lref
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\MainWindow.baml
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\PraktLyambda.g.resources
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\PraktLyambda.Properties.Resources.resources
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\PraktLyambda.csproj.GenerateResource.cache
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\PraktLyambda.csproj.CoreCompileInputs.cache
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\PraktLyambda.exe
+C:\Users\borod\OneDrive\Рабочий стол\PraktLyambda\obj\Debug\PraktLyambda.pdb

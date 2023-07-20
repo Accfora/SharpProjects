@@ -1,0 +1,16 @@
+﻿<Window x:Class="aaa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:aaa"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="gm" HorizontalAlignment="Left" Height="35" Margin="324,38,0,0" TextWrapping="Wrap" Text="Главное меню" VerticalAlignment="Top" Width="172" FontSize="24"/>
+        <Button x:Name="bpj1" Content="Кнопки детям не игрушка" HorizontalAlignment="Left" Margin="297,128,0,0" VerticalAlignment="Top" Width="217" Click="b1pj_Click"/>
+        <Button x:Name="bpj2" Content="Светофор" HorizontalAlignment="Left" Margin="297,198,0,0" VerticalAlignment="Top" Width="217" Click="bpj2_Click"/>
+        <Button x:Name="bpj3" Content="Убегающая кнопка" HorizontalAlignment="Left" Margin="297,265,0,0" VerticalAlignment="Top" Width="217" Click="bpj3_Click"/>
+
+    </Grid>
+</Window>
